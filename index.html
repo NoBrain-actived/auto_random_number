@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="httpGet()">Run</button>
+    <script>
+function httpGet()
+{
+  fetch("https://n8nv2-30mh.onrender.com/webhook/4201bb73-cb40-4ed5-bf63-12743gg45")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
+    </script>
+</body>
+</html>
